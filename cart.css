@@ -1,16 +1,10 @@
-/* ------------------------------------------------------------------
-   ملف: cart.css
-   أنماط إضافية خاصة بصفحة السلة
---------------------------------------------------------------------- */
 .cart-item-card {
     border-radius: 24px;
-    transition: 0.2s;
     margin-bottom: 20px;
     background: white;
 }
 body.dark-mode .cart-item-card {
     background: #1e2a1f;
-    border-color: #3a4a3a;
 }
 .cart-item-icon {
     font-size: 3rem;
@@ -34,7 +28,6 @@ body.dark-mode .cart-item-card {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    font-weight: bold;
     color: white;
 }
 .quantity-btn:active {

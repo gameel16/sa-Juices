@@ -178,3 +178,46 @@ select.form-select {
     font-size: 1.05rem;
     color: #2c3e2f;
 }
+/* جعل شريط التنقل مناسباً للجوال مع القائمة الثابتة */
+.navbar {
+    background-color: rgba(255, 248, 235, 0.96);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.navbar .nav-link {
+    color: #5a3a22;
+    font-size: 1rem;
+    transition: 0.2s;
+    padding: 0.5rem 0.75rem;
+    border-radius: 40px;
+}
+.navbar .nav-link:hover {
+    background-color: #f97316;
+    color: white;
+}
+body.dark-mode .navbar .nav-link {
+    color: #f5e6d3;
+}
+body.dark-mode .navbar .nav-link:hover {
+    background-color: #f97316;
+    color: #1e2a1f;
+}
+@media (max-width: 768px) {
+    .navbar .container {
+        gap: 10px;
+    }
+    .navbar .nav {
+        gap: 5px !important;
+        justify-content: center;
+        width: 100%;
+        order: 3;
+        margin-top: 8px;
+    }
+    .navbar .nav-link {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+    .navbar-brand {
+        font-size: 1.4rem !important;
+    }
+}

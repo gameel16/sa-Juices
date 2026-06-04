@@ -1,0 +1,53 @@
+<!-----------------------------------------------------------------
+  ملف: cart.html
+  صفحة سلة الطلبات تعرض المنتجات المضافة مع خيارات الكمية والملاحظات
+------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة الطلبات - عصائر الصعيدي</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top py-2">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html" style="color:#d45a10;"><i class="fas fa-blender"></i> عصائر الصعيدي</a>
+        <div class="ms-auto">
+            <a href="index.html" class="btn btn-outline-secondary"><i class="fas fa-arrow-right"></i> العودة للمتجر</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h2 class="fw-bold mb-4"><i class="fas fa-shopping-cart"></i> سلة الطلبات</h2>
+    <div id="cartItemsContainer" class="row g-4">
+        <!-- سيتم عرض عناصر السلة ديناميكياً -->
+    </div>
+    <div id="cartSummary" class="card p-4 mt-4 shadow-sm">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <h4>عدد المنتجات: <span id="totalItemsCount">0</span></h4>
+            <h4>الإجمالي: <span id="totalPriceSum">0</span> ريال</h4>
+            <button id="sendOrderBtn" class="btn btn-success btn-lg"><i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب</button>
+        </div>
+    </div>
+</div>
+
+<footer class="footer text-center">
+    <div class="container">
+        <p>تم التطوير بواسطة جميل داوود 
+            <a href="https://wa.me/966563637670" class="whatsapp-developer ms-2"><i class="fab fa-whatsapp"></i> 0563637670</a>
+        </p>
+        <p class="small">© 2025 عصائر الصعيدي - سلة الطلبات</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

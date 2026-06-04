@@ -1,0 +1,42 @@
+/* ------------------------------------------------------------------
+   ملف: cart.css
+   أنماط إضافية خاصة بصفحة السلة
+--------------------------------------------------------------------- */
+.cart-item-card {
+    border-radius: 24px;
+    transition: 0.2s;
+    margin-bottom: 20px;
+    background: white;
+}
+body.dark-mode .cart-item-card {
+    background: #1e2a1f;
+    border-color: #3a4a3a;
+}
+.cart-item-icon {
+    font-size: 3rem;
+    background: #fdeacb;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.notes-field {
+    border-radius: 40px;
+    border: 1px solid #f7b05e;
+    padding: 8px 15px;
+    width: 100%;
+}
+.quantity-btn {
+    background: #f97316;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+}
+.quantity-btn:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="عصائر الصعيد - عصائر طازجة ومشروبات منعشة في نجران،">
+    <meta name="theme-color" content="#F97316">
+    <title>عصائر الصعيد | عصائر طازجة - نجران</title>
+    <!-- Bootstrap 5 RTL + Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- الملف الخارجي CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top py-2">
+    <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html" style="color:#d45a10;">
+            <i class="fas fa-blender"></i> عصائر الصعيد
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2">
+                <li class="nav-item"><a class="nav-link fw-bold" href="#menu">المنيو</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#events">مناسبات</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#location">موقعنا</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="cart.html" id="cartLinkNav"><i class="fas fa-shopping-cart"></i> السلة <span id="cartCountNav" class="cart-badge ms-1">0</span></a></li>
+            </ul>
+            <button id="darkModeToggle" class="btn btn-outline-secondary rounded-circle"><i class="fas fa-moon"></i></button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-left">
+                <h1 class="hero-title">🍹 عصائر الصعيد</h1>
+                <p class="fs-4 mt-3 fw-semibold">مرحباً بكم في عصائر الصعيد، نقدم لكم أجود العصائر الطازجة والمشروبات المنعشة يومياً بأعلى جودة وأفضل مذاق، تحت إشراف المعلم عصفور.</p>
+                <div class="mt-4 d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="#menu" class="btn btn-fruit"><i class="fas fa-list-ul"></i> عرض المنيو</a>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-right">
+                <img src="img/ju.jpg" alt="عصائر طازجة" class="img-fluid rounded-4 shadow-lg" style="max-height: 320px; object-fit: cover; width:100%">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container" id="menu">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold"><i class="fas fa-utensils"></i> قائمة العصائر</h2>
+        <input type="text" id="searchInput" class="search-box" placeholder="🔍 ابحث عن عصير..." style="width:220px;">
+    </div>
+    <div class="text-center mb-4" id="filterButtons">
+        <button class="category-btn active" data-cat="all">الكل</button>
+        <button class="category-btn" data-cat="فواكه">عصائر فواكه</button>
+        <button class="category-btn" data-cat="مشروبات">مشروبات خاصة</button>
+    </div>
+    <div class="row g-4" id="productsContainer"></div>
+</div>
+
+<section class="container my-5" id="events">
+    <div class="row bg-warning bg-opacity-25 rounded-5 p-4 align-items-center" data-aos="zoom-in">
+        <div class="col-md-8">
+            <h3 class="fw-bold"><i class="fas fa-calendar-alt text-warning"></i> طلبات المناسبات والحفلات</h3>
+            <p class="fs-5">في استعداد تام لتلبية جميع طلبات المناسبات والحفلات والفعاليات تحت إشراف <strong>المعلم عصفور</strong>.</p>
+            <a href="https://wa.me/966552121467?text=السلام%20عليكم%20أرغب%20في%20حجز%20طلب%20مناسبات" target="_blank" class="btn btn-success rounded-pill"><i class="fab fa-whatsapp"></i> للحجز عبر واتساب</a>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="fas fa-glass-cheers fa-4x text-warning"></i>
+            <i class="fas fa-birthday-cake fa-3x ms-3"></i>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5" id="location">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card p-3 h-100">
+                <h4><i class="fas fa-map-marker-alt text-danger"></i> موقع المحل</h4>
+                <p>نجران – طريق الملك عبدالعزيز – شرق محطة ابن دوحان - عصائر الصعيد</p>
+                <div class="map-card mb-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.8148561353836!2d44.135592!3d17.492507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15f3b9b2c4b5c2b%3A0x6f7c8d9e0a5b4c2d!2z2YXZgtin2YEg2KfZhtmH2YIg2KjZitmE!5e0!3m2!1sar!2ssa!4v1690000000000!5m2!1sar!2ssa" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="d-flex gap-2">
+                    <button id="openMapsBtn" class="btn btn-outline-orange"><i class="fas fa-directions"></i> فتح الموقع في الخرائط</button>
+                    <button id="shareLocationBtn" class="btn btn-outline-secondary"><i class="fas fa-share-alt"></i> مشاركة الموقع</button>
+                </div>
+                <div class="mt-3">
+                    <span class="fw-bold">تابعونا:</span>
+                    <a href="https://www.instagram.com/asfoor0juice?igsh=MTlmZThucDNkNjI0eA%3D%3D" target="_blank" class="text-dark mx-2 fs-3"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/@asfoor0juice?share_id=M5IUGlTEl-o&locale=ar-YE" target="_blank" class="text-dark mx-2 fs-3"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-3 h-100 text-center bg-success bg-opacity-10">
+                <i class="fas fa-headset fa-3x text-success"></i>
+                <h5 class="mt-2">خدمة عملاء 24/7</h5>
+                <p>للطلب والاستفسار عبر واتساب</p>
+                <a href="https://wa.me/966552121467" class="btn btn-success w-75 mx-auto"><i class="fab fa-whatsapp"></i> 0552121467</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer text-center">
+    <div class="container">
+        <p>تم التطوير بواسطة جميل داوود 
+            <a href="https://wa.me/966563637670" class="whatsapp-developer ms-2"><i class="fab fa-whatsapp"></i> 0563637670</a>
+        </p>
+        <p class="small">© 2025 عصائر الصعيد - أجود العصائر الطازجة في نجران</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
